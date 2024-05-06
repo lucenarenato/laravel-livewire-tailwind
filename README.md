@@ -1,3 +1,5 @@
+# Criando interfaces com Tailwindcss e Livewire
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
@@ -14,3 +16,17 @@
 - https://aistudio.google.com/app/apikey
 - https://www.youtube.com/watch?v=wLR6s-lbvpQ&list=WL&index=4
 - https://github.com/google-gemini-php/laravel
+
+
+## commands
+```sh
+comoser install
+./vendor/bin/sail up
+./vendor/bin/sail artisan migrate
+npm install
+npm run dev
+tail -f storage/logs/*.log
+```
+
+### curiosidade
+- Fonte: Operator Mono
