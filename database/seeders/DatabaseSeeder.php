@@ -3,7 +3,6 @@
 namespace Database\Seeders;
 
 use App\Models\User;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,16 +12,29 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        if (User::count() === 0) {
+            User::factory(10)->create();
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
-        \App\Models\User::factory(25)->create();
-        \App\Models\Challenge::factory(45)->create();
-        \App\Models\Company::factory(35)->create();
-        \App\Models\Program::factory(15)->create();
-        \App\Models\ProgramParticipant::factory(50)->create();
+            User::factory()->create([
+                'name' => 'Test User',
+                'email' => 'test@example.com',
+            ]);
+        }
+
+        if (\App\Models\Challenge::count() === 0) {
+            \App\Models\Challenge::factory(45)->create();
+        }
+
+        if (\App\Models\Company::count() === 0) {
+            \App\Models\Company::factory(35)->create();
+        }
+
+        if (\App\Models\Program::count() === 0) {
+            \App\Models\Program::factory(15)->create();
+        }
+
+        if (\App\Models\ProgramParticipant::count() === 0) {
+            \App\Models\ProgramParticipant::factory(50)->create();
+        }
     }
 }
