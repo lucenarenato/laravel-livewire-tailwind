@@ -28,5 +28,7 @@ npm run dev
 tail -f storage/logs/*.log
 ```
 
+→  TailwinCSS Playground: ​​https://play.tailwindcss.com/
+
 ### curiosidade
 - Fonte: Operator Mono

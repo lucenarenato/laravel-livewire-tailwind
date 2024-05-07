@@ -2,8 +2,11 @@
 
 namespace Database\Seeders;
 
+use App\Models\Author;
+use App\Models\Book;
 use App\Models\User;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class DatabaseSeeder extends Seeder
 {
@@ -36,5 +39,7 @@ class DatabaseSeeder extends Seeder
         if (\App\Models\ProgramParticipant::count() === 0) {
             \App\Models\ProgramParticipant::factory(50)->create();
         }
+        Author::factory(10)->create();
+        Book::factory(50)->create();
     }
 }
