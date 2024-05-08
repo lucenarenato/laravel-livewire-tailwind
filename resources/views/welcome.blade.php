@@ -50,32 +50,32 @@
             }
         </style>
     </head>
-    <body>
-
-        <div class="container">
-            <div class="card">
-                <h1 class="text-3xl font-bold mb-5 text-center">Interfaces com Tailwindcss e Livewire</h1>
+    <body class="bg-gray-100 font-sans">
+        <div class="container mx-auto px-4">
+            <br>
+            <div class="card bg-white rounded-lg shadow-md p-8 mb-8">
+                <h1 class="text-3xl font-bold mb-5 text-center">Interfaces com Tailwind CSS e Livewire</h1>
             </div>
-            <div class="card">
+            <div class="card bg-white rounded-lg shadow-md p-8 mb-8">
                 <h1 class="text-3xl font-bold mb-5 text-center">Bem-vindo</h1>
                 <div class="flex justify-center">
-                    <!-- Botão para rota "gemini" -->
-                    <a href="{{ route('gemini.create') }}" class="btn mr-3">Criar Gemini</a>
-
-                    <!-- Botão para rota "gemini/index" -->
-                    <a href="{{ route('gemini.index') }}" class="btn mr-3">Índice Gemini</a>
-
-                    <!-- Botão para rota "table" -->
-                    <a href="{{ route('table') }}" class="btn">Tabela</a>
-                    <a href="{{ route('show.books') }}" class="btn">Show Books</a>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                        <!-- Botões para as rotas -->
+                        <a href="{{ route('gemini.create') }}" class="btn">Criar Gemini</a>
+                        <a href="{{ route('gemini.index') }}" class="btn">Índice Gemini</a>
+                        <a href="{{ route('table') }}" class="btn">Tabela</a>
+                        <a href="{{ route('show.books') }}" class="btn">Show Books</a>
+                        <a href="{{ route('import') }}" class="btn">Ex:.Import CSV</a>
+                        <a href="{{ route('product') }}" class="btn">Add Product</a>
+                        <a href="{{ route('users') }}" class="btn">Delete Users Bootstrap</a>
+                    </div>
                 </div>
+
             </div>
         </div>
-
         <!-- Footer -->
-        <footer class="footer">
+        <footer class="footer bg-white text-center py-4">
             Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
         </footer>
-
     </body>
     </html>

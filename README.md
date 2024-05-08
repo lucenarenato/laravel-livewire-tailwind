@@ -32,3 +32,4 @@ tail -f storage/logs/*.log
 
 ### curiosidade
 - Fonte: Operator Mono
+- https://tenancyforlaravel.com/

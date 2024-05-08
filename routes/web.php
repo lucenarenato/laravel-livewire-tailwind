@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Livewire\TablesResponsivo;
 use App\Livewire\ShowBooks;
+use App\Livewire\Import;
+use App\Livewire\Users;
 
 Route::get('/', function () {
     return view('welcome');
@@ -16,3 +18,11 @@ Route::post("gemini/image2", [\App\Http\Controllers\GeminiImageController::class
 Route::get('table', TablesResponsivo::class)->name('table');
 
 Route::get('/show/books', ShowBooks::class)->name('show.books');
+
+Route::get('/import', Import::class)->name('import');
+
+Route::get('product', function () {
+    return view('productteste');
+})->name('product');
+
+Route::get('users', Users::class)->name('users');
